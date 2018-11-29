@@ -5,6 +5,11 @@
  */
 package com.fBelitama.controlador;
 
+import com.fBelitama.vista.Book;
+import com.fBelitama.vista.Chapter;
+import com.fBelitama.vista.Magazine;
+import com.fBelitama.vista.Movie;
+import com.fBelitama.vista.Series;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -13,6 +18,79 @@ import java.util.Scanner;
  * 
  */
 public class Coordinador {
+    
+    
+//    Book book=new Book(this);
+//    Chapter chapter=new Chapter(this);
+//    Magazine magazine=new Magazine(this);
+//    Movie movie=new Movie(this);
+//    Series series=new Series(this);
+//    
+//    
+//    public  void showBook(){
+//        
+//        book.setVisible(true);
+//        
+//    }
+//
+//    public void hideBook(){
+//     
+//        book.setVisible(false);
+//        
+//    }
+//
+//    public void showChapter(){
+//        
+//        chapter.setVisible(true);
+//        
+//        
+//    }
+//
+//    public void hideChapter(){
+//        
+//        chapter.setVisible(false);
+//        
+//        
+//    }
+//
+//    public void showMagazine(){
+//        
+//        magazine.setVisible(true);
+//        
+//        
+//    }
+//
+//    public void hodeMagazine(){
+//        
+//        magazine.setVisible(false);
+//        
+//        
+//    }
+//
+//    
+//    public void showMovie(){
+//        
+//        movie.setVisible(true);
+//        
+//    }    
+//    public void hideMovie(){
+//        
+//        movie.setVisible(false);
+//        
+//    }
+//
+//    public void showSeries(){
+//        
+//        series.setVisible(true);
+//        
+//    }
+//
+//    public void hideSeries(){
+//        
+//        series.setVisible(false);
+//        
+//    }
+    
     public static void showMenu(){
         int exit=0;
         do {
@@ -34,6 +112,7 @@ public class Coordinador {
                     break;
                 case 1:
                     ShowBooks();
+                    
                     break;
                 case 2:
                     ShowMagazine();
@@ -61,15 +140,19 @@ public class Coordinador {
     }
     private static void ShowMovies(){
         int exit =0;
-        do {            
+        do {
+            new Movie().setVisible(true);
             System.out.println("");
             System.out.println(":: MOVIES ::");
             System.out.println("");
+            
+            
         } while (exit !=0);
     }
     private static void ShowSeries(){
         int exit =0;
-        do {            
+        do { 
+            new Series().setVisible(true);
             System.out.println("");
             System.out.println(":: SERIES ::");
             System.out.println("");
@@ -77,7 +160,8 @@ public class Coordinador {
     }
     private static void ShowChapter(){
         int exit =0;
-        do {            
+        do { 
+            new Chapter().setVisible(true);
             System.out.println("");
             System.out.println(":: CHAPTER ::");
             System.out.println("");
@@ -85,7 +169,8 @@ public class Coordinador {
     }
    private static void ShowBooks(){
         int exit =0;
-        do {            
+        do {   
+            new Book().setVisible(true);
             System.out.println("");
             System.out.println(":: BOOKS ::");
             System.out.println("");
@@ -93,7 +178,8 @@ public class Coordinador {
     }
    private static void ShowMagazine(){
         int exit =0;
-        do {            
+        do { 
+            new Magazine().setVisible(true);
             System.out.println("");
             System.out.println(":: MAGAZINE ::");
             System.out.println("");
